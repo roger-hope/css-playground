@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-classes Presentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="presentation">
+    <nav>
+        <ul>
+            <li><a href="#slide1">Tree-structural Pseudo-classes</a></li>
+            <li><a href="#slide2">User Action Pseudo-classes</a></li>
+            <li><a href="#slide3">Functional Pseudo-classes</a></li>
+        </ul>
+    </nav>
+    <div id="slide1" class="slide">
+        <h2>Tree-structural Pseudo-classes</h2>
+        <p>These pseudo-classes relate to the position of an element within the document tree.</p>
+        <ul>
+            <li><code>:first-child</code></li>
+            <li><code>:nth-child()</code></li>
+            <li><code>:only-child</code></li>
+        </ul>
+        <a href="#slide2" class="next">Next</a>
+    </div>
+    <div id="slide2" class="slide">
+        <h2>User Action Pseudo-classes</h2>
+        <p>These pseudo-classes apply styles based on user interactions like hovering or clicking.</p>
+        <ul>
+            <li><code>:hover</code></li>
+            <li><code>:active</code></li>
+        </ul>
+        <a href="#slide1" class="prev">Previous</a>
+        <a href="#slide3" class="next">Next</a>
+    </div>
+    <div id="slide3" class="slide">
+        <h2>Functional Pseudo-classes</h2>
+        <p>These pseudo-classes take arguments and provide more complex matching capabilities.</p>
+        <ul>
+            <li><code>:is()</code></li>
+            <li><code>:where()</code></li>
+            <li><code>:has()</code></li>
+            <li><code>:not()</code></li>
+        </ul>
+        <a href="#slide2" class="prev">Previous</a>
+    </div>
+</div>
+</body>
+</html>

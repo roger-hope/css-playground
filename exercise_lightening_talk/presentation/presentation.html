@@ -18,32 +18,79 @@
     <div id="slide1" class="slide">
         <h2>Tree-structural Pseudo-classes</h2>
         <p>These pseudo-classes relate to the position of an element within the document tree.</p>
-        <ul>
+        <ul class="p-left">
             <li><code>:first-child</code></li>
             <li><code>:nth-child()</code></li>
             <li><code>:only-child</code></li>
         </ul>
+        <div class="p-left">
+            <div class="p-left">/* Tree-structural pseudo-classes */</div>
+            <div class="p-left">td:first-child{ background-color: palevioletred; }</div>
+            <div class="p-left">td:last-child{ background-color: palevioletred; }</div>
+            <div class="p-left">tr:nth-child(even) { background-color: #8fa7bd; }</div>
+            <div class="p-left">tr:nth-child(odd) { background-color: #c0ac66; }</div>
+            <div class="p-left">:root :empty</div>
+            <div class="p-left">:nth-child</div>
+            <div class="p-left">:nth-last-child</div>
+            <div class="p-left">:first-child :</div>
+            <div class="p-left">last-child</div>
+            <div class="p-left">:only-child</div>
+            <div class="p-left">:nth-of-type</div>
+            <div class="p-left">:nth-last-of-type</div>
+            <div class="p-left">:first-of-type</div>
+            <div class="p-left">:last-of-type</div>
+            <div class="p-left">:only-of-type</div>
+        </div>
+        <div class="p-left">
+            :root
+            :empty
+            :nth-child
+            :nth-last-child
+            :first-child
+            :last-child
+            :only-child
+            :nth-of-type
+            :nth-last-of-type
+            :first-of-type:last-of-type
+            :only-of-type
+        </div>
         <a href="#slide2" class="next">Next</a>
     </div>
     <div id="slide2" class="slide">
         <h2>User Action Pseudo-classes</h2>
         <p>These pseudo-classes apply styles based on user interactions like hovering or clicking.</p>
-        <ul>
+        <ul class="p-left">
             <li><code>:hover</code></li>
             <li><code>:active</code></li>
         </ul>
+        <div class="p-left">
+            <p>/* User action pseudo-classes */</p>
+            <p>.joinBtn { width: 10em; height: 5ex; background-color: gold; border: 2px solid firebrick; border-radius: 10px; font-weight: bold; color: black; cursor: pointer; }</p>
+            <p>/*hover part css*/</p>
+            <p>.joinBtn:hover { background-color: red; }</p>
+            <p>/*active part css*/</p>
+            <p>.joinBtn:active { box-shadow: 2px 2px 5px red; border: 5px blue solid; }</p>
+            <p>/* Focus part css*/</p>
+            <p>label { display: block; margin-top: 1em; }</p>
+            <p>input:focus { background-color: red; }</p>
+            <p>select:focus { background-color: blue; }</p>
+        </div>
         <a href="#slide1" class="prev">Previous</a>
         <a href="#slide3" class="next">Next</a>
     </div>
     <div id="slide3" class="slide">
         <h2>Functional Pseudo-classes</h2>
         <p>These pseudo-classes take arguments and provide more complex matching capabilities.</p>
-        <ul>
+        <ul class="p-left">
             <li><code>:is()</code></li>
             <li><code>:where()</code></li>
             <li><code>:has()</code></li>
             <li><code>:not()</code></li>
         </ul>
+        <div class="p-left"><p>/* Functional pseudo-classes */</p>
+            <p>:is(header, footer) {background-color: #333;color: white;}</p>
+            <p>:where(.hero, .features) {margin-bottom: 2em;}</p>
+            <p>.features .feature:not(:nth-child(2)) {border: 1px solid #ccc;} </p></div>
         <a href="#slide2" class="prev">Previous</a>
     </div>
 </div>

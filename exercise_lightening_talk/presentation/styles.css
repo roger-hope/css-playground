@@ -75,3 +75,7 @@ a.next, a.prev {
 a.next:hover, a.prev:hover {
     background-color: #0056b3;
 }
+
+.p-left {
+    text-align:left;
+}

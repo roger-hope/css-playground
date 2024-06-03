@@ -60,6 +60,20 @@ footer {
 }
 /* Tree-structural pseudo-classes */
 
+td:first-child{
+    background-color: palevioletred;
+}
+td:last-child{
+    background-color: palevioletred;
+}
+
+tr:nth-child(even) {
+    background-color: #8fa7bd;
+}
+
+tr:nth-child(odd) {
+    background-color: #c0ac66;
+}
 
 /* User action pseudo-classes */
 .joinBtn {
